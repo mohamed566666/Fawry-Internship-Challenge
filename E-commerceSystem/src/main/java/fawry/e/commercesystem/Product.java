@@ -55,8 +55,8 @@ public class Product implements Shippable {
         return price;
     }
 
-    public void setPrice(Double price) {
-        if (price == null || price < 0) {
+    public void setPrice(double price) {
+        if (price < 0) {
             throw new IllegalArgumentException("Price can't be Negative or NULL");
         }
         this.price = price;
